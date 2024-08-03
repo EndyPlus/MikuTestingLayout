@@ -4,6 +4,9 @@
   font-style: normal;
 }
 
+@media (min-width: 1280px) {
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -20,15 +23,15 @@ HEADER
 
 header {
   background-color: #137a7f;
-  font-size: 24px;
+  font-size: 3.5vh;
 }
 
 header img {
-  height: 80px;
+  height: 11vh;
 }
 
 .icon img {
-  border: 2px black solid;
+  border: 0.268vh black solid;
   border-radius: 50%;
 }
 
@@ -36,7 +39,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 1vh 2vw;
 }
 
 .list ul {
@@ -48,8 +51,8 @@ header img {
 }
 
 .list ul li {
-  margin: 0 10px;
-  padding: 10px;
+  margin: 0 1vw;
+  padding: 1vh;
 }
 
 .list ul li a {
@@ -95,30 +98,30 @@ SIDEBAR
   justify-content: space-around;
   font-weight: 500;
   flex-grow: 1;
-  max-width: 300px;
+  max-width: 20%;
 }
 
 .side-section {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px;
+  margin: 1vh 0vh;
 }
 
 .side-section h2 {
-  padding-left: 10px;
-  font-size: 30px;
+  padding-left: 1.5vw;
+  font-size: 4vh;
 }
 
 .side-section ul {
   list-style-type: "\1F4BF";
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 3.217vh;
+  padding-left: 4vw;
 }
 
 .side-section ul li {
-  padding-left: 20px;
-  margin: 5px 0px;
+  margin: 0.67vh 0vh;
 }
 
 .side-section ul li a {
@@ -140,11 +143,11 @@ MAIN CONTENT
 */
 
 .main {
+  margin: 2vh 2vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4vw;
   flex-grow: 2;
-  padding: 10px;
 }
 
 /* 
@@ -155,46 +158,57 @@ VIDEO CARD
 
 */
 
-.card-container {
-  border: 2px black solid;
-}
-
-.card-container a {
-  text-decoration: none;
-  color: #ed1d85;
-}
-
-.card-container a:focus {
-  text-decoration: underline;
-}
-
 .card {
+  height: 30vh;
+  border: 0.6vh #137a7f solid;
+  overflow: hidden;
+}
+
+.card:hover {
+  border: 0.6vh #ed1d85 solid;
+}
+
+.card a {
   display: flex;
   flex-direction: column;
-  padding: 2px;
-  background-color: white;
-  height: 250px;
+  justify-content: space-between;
+  height: 30vh;
+  text-decoration: none;
 }
+
 .video {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #bec8d1;
-  height: 100px;
-  flex-grow: 5;
+  flex-grow: 1;
+  user-select: none;
+  pointer-events: none;
 }
 
 .video img {
-  height: 80px;
-  user-select: none; /* Забороняє виділення тексту та інших елементів */
-  pointer-events: none; /* Забороняє будь-які події, включаючи виділення */
+  height: 10vh;
+}
+
+.card:hover .video img {
+  transform: scale(1.2); /* Scale up by 20% on hover */
 }
 
 .video-name {
   display: flex;
   justify-content: center;
-  align-items: end;
-  padding: 5px 2px;
+  padding: 0.67vh 0.134vw;
+  color: #ed1d85;
+}
+
+.video-name h2 {
+  font-size: 3vh;
+  font-weight: 500;
+}
+
+.card:hover .video-name h2 {
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 /* 
@@ -206,11 +220,11 @@ FOOTER
 */
 
 footer {
-  font-size: 24px;
+  font-size: 3.3vh;
   display: flex;
   justify-content: center;
   background-color: #137a7f;
   color: #bec8d1;
   font-weight: 900;
-  padding: 25px 20px;
+  padding: 3.4vh 1.5vw;
 }
