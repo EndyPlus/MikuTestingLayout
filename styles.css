@@ -21,6 +21,15 @@
     font-size: 3.5vh;
   }
 
+  .header {
+    display: flex;
+    padding: 1vh 2vw;
+  }
+
+  .header-burger {
+    display: none;
+  }
+
   header img {
     height: 11vh;
   }
@@ -31,10 +40,6 @@
 
   .icon img:hover {
     border: 0.5vh #ed1d85 solid;
-  }
-
-  .header-container {
-    padding: 1vh 2vw;
   }
 
   .list ul li {
@@ -173,6 +178,15 @@
     font-size: 3.5vh;
   }
 
+  .header {
+    display: flex;
+    padding: 1vh 2vw;
+  }
+
+  .header-burger {
+    display: none;
+  }
+
   header img {
     height: 11vh;
   }
@@ -183,10 +197,6 @@
 
   .icon img:hover {
     border: 0.5vh #ed1d85 solid;
-  }
-
-  .header-container {
-    padding: 1vh 2vw;
   }
 
   .list ul li {
@@ -325,6 +335,14 @@
     font-size: 3.5vh;
   }
 
+  .header {
+    display: none;
+  }
+
+  .header-burger {
+    display: flex;
+  }
+
   header img {
     height: 11vh;
   }
@@ -335,10 +353,6 @@
 
   .icon img:hover {
     border: 0.5vh #ed1d85 solid;
-  }
-
-  .header-container {
-    padding: 1vh 2vw;
   }
 
   .list ul li {
@@ -525,6 +539,17 @@ header {
   background-color: #137a7f;
   /* font-size: 3.5vh; */
 }
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1vh 2vw; */
+}
+
+/* .header-burger {
+  display: none;
+}  */
+
 /* 
 header img {
   height: 11vh;
@@ -537,13 +562,6 @@ header img {
 
 .icon img:hover {
   border: 0.5vh #ed1d85 solid;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* padding: 1vh 2vw; */
 }
 
 .list ul {
@@ -600,7 +618,6 @@ SIDEBAR
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-weight: 500;
   flex-grow: 1;
   /* max-width: 20%; */
 }
@@ -610,6 +627,16 @@ SIDEBAR
   flex-direction: column;
   /* margin: 1vh 0vh; */
   word-wrap: break-word;
+}
+
+.side-section h2 a {
+  color: #ed1d85;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.side-section h2 a:hover {
+  font-weight: 900;
 }
 
 /* .side-section h2 {
@@ -666,6 +693,8 @@ VIDEO CARD
   /* height: 30vh; */
   border: 0.6vh #137a7f solid;
   overflow: hidden;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
 }
 
 .card:hover {
