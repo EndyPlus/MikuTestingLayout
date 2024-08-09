@@ -68,6 +68,9 @@
   */
 
   .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-grow: 1;
     max-width: 20%;
   }
@@ -232,8 +235,11 @@
   */
 
   .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-grow: 1;
-    max-width: 20%;
+    max-width: 25%;
   }
 
   .side-section {
@@ -400,8 +406,10 @@
   */
 
   .sidebar {
-    flex-grow: 1;
-    max-width: 20%;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    padding: 2vh 0vh;
   }
 
   .side-section {
@@ -435,6 +443,7 @@
     margin: 2vh 2vw;
     gap: 4vw;
     flex-grow: 2;
+    margin-bottom: 2vh;
   }
 
   /* 
@@ -643,10 +652,10 @@ SIDEBAR
 .sidebar {
   background-color: #86cecb;
   color: #ed1d85;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-grow: 1;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: space-around; */
+  /* flex-grow: 1; */
   /* max-width: 20%; */
 }
 
