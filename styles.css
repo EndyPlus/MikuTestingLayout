@@ -418,17 +418,17 @@
 
   .side-section h2 {
     padding-left: 1.5vw;
-    font-size: 4vh;
+    font-size: 2vh;
   }
 
-  .side-section ul {
+  /* .side-section ul {
     font-size: 3.217vh;
     padding-left: 4vw;
   }
 
   .side-section ul li {
     margin: 0.67vh 0vh;
-  }
+  } */
 
   /* 
   
@@ -614,13 +614,17 @@ header img {
   padding: 1vh;
 } */
 
-.list ul li a {
+.list a {
   font-weight: 600;
   text-decoration: none;
   color: #bec8d1;
 }
 
-.list ul li a:hover {
+.list a:hover {
+  color: white;
+}
+
+.list .active-li {
   color: white;
 }
 
