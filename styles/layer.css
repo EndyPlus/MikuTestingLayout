@@ -176,6 +176,10 @@
 }
 
 @media (max-width: 463px) {
+  .header-container {
+    padding: 2vh 0vh;
+  }
+
   /* .main {
     grid-template-columns: 1fr;
     margin: 2vh 2vw;
@@ -188,6 +192,12 @@
     padding-left: 1.5vw;
     font-size: 2vh;
   } */
+
+  footer {
+    font-size: 3.3vh;
+    padding: 2vh 0vh;
+    font-size: 2.5vh;
+  }
 }
 
 /* 
