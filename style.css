@@ -365,6 +365,10 @@
     display: none;
   }
 
+  .header-container {
+    padding: 2vh 0vh;
+  }
+
   .header-burger {
     display: flex;
   }
