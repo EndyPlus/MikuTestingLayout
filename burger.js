@@ -2,8 +2,6 @@ let icon = document.getElementById("burgerBtn");
 let burgerList = document.getElementsByClassName("burger-list");
 let burgerListUl = document.querySelector("ul");
 
-const activeBurgerMenu = localStorage.getItem("status");
-
 function enableBurgerMenu() {
   icon.src = "/assets/close_icon.png";
   burgerListUl.style.display = "flex";
@@ -17,9 +15,12 @@ function disableBurgerMenu() {
 }
 
 function burger() {
-  if (!activeBurgerMenu) {
+  console.log("Click");
+  if (localStorage.getItem("status") !== "active") {
+    console.log("Open");
     enableBurgerMenu();
   } else {
+    console.log("Close");
     disableBurgerMenu();
   }
 }
@@ -27,15 +28,18 @@ function burger() {
 // checking window size
 function checkWindowSize() {
   if (window.innerWidth > 730) {
-    icon.src = "/assets/hamburger_icon.png";
-    burgerListUl.style.display = "none";
-    burgerActive = false;
+    disableBurgerMenu();
   }
 }
 
 function checkMobileReload() {
-  if (window.innerWidth <= 730 && activeBurgerMenu == "active") {
-    enableBurgerMenu();
+  let statusValue = localStorage.getItem("status");
+  if (window.innerWidth <= 730) {
+    if (statusValue == "active") {
+      enableBurgerMenu();
+    } else {
+      disableBurgerMenu();
+    }
   }
 }
 
