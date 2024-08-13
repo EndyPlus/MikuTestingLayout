@@ -11,12 +11,28 @@
     />
     <link rel="stylesheet" href="/styles/layer.css" />
     <link rel="stylesheet" href="/styles/home.css" />
-    <title>Simple Layout</title>
+    <title>For You</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <div class="header-burger">BURGER</div>
+        <div class="header-burger">
+          <img
+            src="/assets/hamburger_icon.png"
+            alt="BURGER"
+            id="burgerBtn"
+            onclick="burger()"
+          />
+        </div>
+
+        <nav class="burger-list">
+          <ul>
+            <li><a href="/" class="active-li">FOR YOU</a></li>
+            <li><a href="/recomendations.html">RECOMENDATIONS</a></li>
+            <li><a href="/friends.html">FRIENDS</a></li>
+          </ul>
+        </nav>
+
         <div class="header">
           <div class="logo">
             <a href="#"><img src="./assets/logo.png" alt="LOGO" /></a>
@@ -144,5 +160,6 @@
       </div>
     </main>
     <footer>2009 &copy; MikuTube</footer>
+    <script src="/burger.js"></script>
   </body>
 </html>

@@ -16,7 +16,27 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="header-burger">BURGER</div>
+        <div class="header-burger">
+          <img
+            src="/assets/hamburger_icon.png"
+            alt="BURGER"
+            id="burgerBtn"
+            onclick="burger()"
+          />
+        </div>
+
+        <nav class="burger-list">
+          <ul>
+            <li><a href="/">FOR YOU</a></li>
+            <li>
+              <a href="/recomendations.html" class="active-li"
+                >RECOMENDATIONS</a
+              >
+            </li>
+            <li><a href="/friends.html">FRIENDS</a></li>
+          </ul>
+        </nav>
+
         <div class="header">
           <div class="logo">
             <a href="#"><img src="./assets/logo.png" alt="LOGO" /></a>
