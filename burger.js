@@ -1,26 +1,24 @@
-let icon = document.getElementById("burgerBtn");
+let burgerBtn = document.getElementById("burgerBtn");
+
 let burgerList = document.getElementsByClassName("burger-list");
 let burgerListUl = document.querySelector("ul");
 
 function enableBurgerMenu() {
-  icon.src = "/assets/close_icon.png";
+  burgerBtn.classList.add("active");
   burgerListUl.style.display = "flex";
   localStorage.setItem("status", "active");
 }
 
 function disableBurgerMenu() {
-  icon.src = "/assets/hamburger_icon.png";
+  burgerBtn.classList.remove("active");
   burgerListUl.style.display = "none";
   localStorage.removeItem("status");
 }
 
 function burger() {
-  console.log("Click");
   if (localStorage.getItem("status") !== "active") {
-    console.log("Open");
     enableBurgerMenu();
   } else {
-    console.log("Close");
     disableBurgerMenu();
   }
 }

@@ -170,14 +170,74 @@
     padding: 1vh;
   }
 
+  /* 
+ 
+
+  Burger btn
+
+
+  */
+
   .header-burger {
     display: flex;
     justify-content: center;
   }
 
-  .header-burger img {
-    height: 7vh;
+  .burger-menu {
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    cursor: pointer;
   }
+
+  .bur-menu {
+    width: 70%;
+    height: 10%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s, opacity 0.6s, top 0.4s;
+  }
+
+  .top-bar {
+    top: 25%;
+  }
+
+  .bottom-bar {
+    top: 75%;
+  }
+
+  .burger-menu.active .top-bar {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+  }
+
+  .burger-menu.active .mid-bar {
+    opacity: 0;
+  }
+
+  .burger-menu.active .bottom-bar {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+  }
+
+  /* 
+ 
+
+  Burger list
+
+
+  */
+
+  .burger-list {
+    padding-top: 0.5rem;
+  }
+
+  /* .header-burger img {
+    height: 5vh;
+  } */
 
   .burger-list ul {
     display: none;
@@ -186,7 +246,7 @@
   .burger-list li {
     margin: 0 1vw;
     padding: 1vh;
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
 
   /* 
@@ -208,14 +268,74 @@
     padding: 2vh 0vh;
   }
 
+  /* 
+ 
+
+  Burger btn
+
+
+  */
+
   .header-burger {
     display: flex;
     justify-content: center;
   }
 
-  .header-burger img {
-    height: 5vh;
+  .burger-menu {
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    cursor: pointer;
   }
+
+  .bur-menu {
+    width: 70%;
+    height: 10%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s, opacity 0.6s, top 0.4s;
+  }
+
+  .top-bar {
+    top: 25%;
+  }
+
+  .bottom-bar {
+    top: 75%;
+  }
+
+  .burger-menu.active .top-bar {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+  }
+
+  .burger-menu.active .mid-bar {
+    opacity: 0;
+  }
+
+  .burger-menu.active .bottom-bar {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+  }
+
+  /* 
+ 
+
+  Burger list
+
+
+  */
+
+  .burger-list {
+    padding-top: 0.5rem;
+  }
+
+  /* .header-burger img {
+    height: 5vh;
+  } */
 
   .burger-list ul {
     display: none;
